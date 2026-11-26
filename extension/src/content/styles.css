@@ -1,0 +1,64 @@
+.lpc-extract-btn-wrap {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.lpc-extract-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1px solid #0a66c2;
+  background-color: #ffffff;
+  color: #0a66c2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.lpc-extract-btn:hover:not(:disabled) {
+  background-color: #eef3f8;
+}
+
+.lpc-extract-btn:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
+.lpc-extract-btn--loading {
+  border-color: #666666;
+  color: #666666;
+  background-color: #f3f2ef;
+}
+
+.lpc-extract-btn--saved {
+  border-color: #057642;
+  background-color: #e6f4ea;
+  color: #057642;
+}
+
+.lpc-extract-btn--duplicate {
+  border-color: #915907;
+  background-color: #fef7e0;
+  color: #915907;
+}
+
+.lpc-extract-btn--auth {
+  border-color: #b24020;
+  background-color: #fce8e6;
+  color: #b24020;
+}
+
+.lpc-extract-btn--error {
+  border-color: #cc1016;
+  background-color: #fce8e6;
+  color: #cc1016;
+}
